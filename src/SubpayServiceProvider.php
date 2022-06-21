@@ -46,12 +46,8 @@ class SubpayServiceProvider extends ServiceProvider
             __DIR__ . '/../config/subpay.php' => config_path('subpay.php'),
         ]);
 
-        $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
         $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'subpay');
-        $this->publishes([
-            __DIR__ . '/../resources/views' => resource_path('views/vendor/subpay'),
-        ]);
+
         if (File::exists(__DIR__ . '/Helper/Helpers.php')) {
             require __DIR__ . '/Helper/Helpers.php';
         }
