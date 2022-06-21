@@ -1,0 +1,27 @@
+{
+    "name": "hitoridev/subpay",
+    "description": "Package for subscription template and payment integrator",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hitoridev\\Subpay\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "hitoridev",
+            "email": "hitori.gamedev@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hitoridev\\Subpay\\SubpayServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+    }
+}
