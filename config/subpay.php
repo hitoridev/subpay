@@ -1,7 +1,6 @@
 <?php
 
 use App\Models\Fitur;
-use App\Models\User;
 use Hitoridev\Subpay\Models\Plan;
 use Hitoridev\Subpay\Models\Subscription;
 
@@ -15,5 +14,7 @@ return [
         'plan' => Plan::class,
         'fitur' => Fitur::class,
         'subscription' => Subscription::class,
+        'midtrans' => null
     ],
+    'midtrans_orders' => false,
 ];

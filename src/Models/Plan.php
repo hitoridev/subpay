@@ -3,12 +3,15 @@
 namespace Hitoridev\Subpay\Models;
 
 use Hitoridev\Subpay\Models\Fitur;
+use Hitoridev\Subpay\Traits\hasManyMidtransOrders;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Plan extends Model
 {
+    use hasManyMidtransOrders;
+
     protected $guarded = [''];
 
     protected $casts = [
